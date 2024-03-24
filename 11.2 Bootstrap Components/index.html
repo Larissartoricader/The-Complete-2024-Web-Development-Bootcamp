@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./airplane-fill.svg" height="50"> 100 ROTEIROS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Roteiros Gratuitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dicas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Roteiros Personalizados</a></li>
+              <li><a class="dropdown-item" href="#">Análise de Roteiros</a></li>
+              <li><a class="dropdown-item" href="#">Consultoria Pré-Viagem</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Primeira Viagem Internacional</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Vai pra onde?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Destinos</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">A viagem perfeita</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">A 100 Roteiros é uma empresa especializada em criar itinerários de viagem sob medida, oferecendo experiências únicas e personalizadas para cada cliente. Com uma equipe dedicada e conhecimento local, a 100 Roteiros transforma sonhos em realidade, proporcionando jornadas inesquecíveis pelo mundo.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Roteiros Personalizados</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Roteiros Gratuitos</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 500vh;">
+      <div class="container px-5">
+        <img src="./xavier-mouton-photographie-ry_sD0P1ZL0-unsplash.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="700" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Como o seu Roteiro é produzido? </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./list-check.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Dia a Dia </h3>
+        <p>Um roteiro de viagem bem elaborado oferece um guia detalhado, maximizando o aproveitamento do tempo e dos recursos, para explorar os melhores destinos e atrações de forma eficiente e memorável.</p>
+        <a href="#" class="icon-link">
+          Como incluir atrações no roteiro?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./cash-coin.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Custos</h3>
+        <p>Um roteiro de viagem bem planejado pode influenciar significativamente nos custos totais, pois considera antecipadamente todos os gastos e evita surpresas financeiras desagradáveis que podem impactar o preço final da viagem.</p>
+        <a href="#" class="icon-link">
+          Como calcular o custo da viagem?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./calendar-date.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Eventos & Festividades</h3>
+        <p>Incluir eventos, festividades, festivais e atrações sazonais em um roteiro de viagem não só torna a experiência única e especial, mas também foge dos padrões de itinerários pré-prontos, garantindo que cada dia da viagem seja cuidadosamente planejado de acordo com as datas específicas, proporcionando uma experiência autêntica e memorável.</p>
+        <a href="#" class="icon-link">
+          Como achar eventos para minha viagem?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+    </div>
+  </div>
+  <div class="container px-4 py-5" id="featured-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./bus-front.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Transporte</h3>
+        <p>Escolher o meio de transporte adequado pode otimizar o tempo e economizar recursos, garantindo uma viagem mais eficiente e proveitosa.</p>
+        <a href="#" class="icon-link">
+          Como planejar o locomocao durante a viagem?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./balloon-heart.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Hobbies & Interesses</h3>
+        <p>Na hora de montar um roteiro de viagem, é essencial considerar seus próprios interesses e paixões, seja por esportes, artes, compras, teatros ou experiências gastronômicas, garantindo uma jornada verdadeiramente enriquecedora e personalizada.</p>
+        <a href="#" class="icon-link">
+          Quais sao interesses comuns de uma viagem?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./camera.svg" alt="lista" height="40px">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Pontos Turísticos</h3>
+        <p>
+          Ao planejar um roteiro de viagem, é crucial selecionar cuidadosamente os pontos turísticos que realmente valem a pena visitar, evitando uma agenda superlotada e impraticável, para garantir uma experiência mais tranquila e proveitosa durante a estadia na cidade.</p>
+        <a href="#" class="icon-link">
+          Quantos pontos turísticos consigo visitar?
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+    </div>
+  </div>
+  <div class="container py-3">
+    <header>
+      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none"></a>      
+      </div>
+  
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">Preços & Pacotes</h1>
+        <p class="fs-5 text-body-secondary">A 100 Roteiros oferece três tipos de pacotes com preços progressivamente crescentes, adaptados às necessidades individuais dos clientes, garantindo um suporte personalizado que varia de acordo com o nível de assistência desejado durante a viagem.</p>
+      </div>
+    </header>
+  
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Econômico</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$ 50<small class="text-body-secondary fw-light">/Roteiro</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Roteiro Personalizado</li>
+                <li>Dados coletados através de formulário</li>
+                <li>1-7 dias de viagens (Incluso chegada/partida)</li>
+                <li>1 Revisão após a entrega</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Executivo</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$200<small class="text-body-secondary fw-light">/Roteiro</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Roteiro Personalizado</li>
+                <li>Dados coletados através de formulário & ligação</li>
+                <li>1-7 dias de viagens (Incluso chegada/partida)</li>
+                <li>1 Revisão após a entrega</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Primeira Classe</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">R$500<small class="text-body-secondary fw-light">/Roteiro</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Roteiro Personalizado</li>
+                <li>Dados coletados através de ligação</li>
+                <li>1-10 dias de viagens (Incluso chegada/partida)</li>
+                <li>2 Revisões após a entrega</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Verificar Disponibilidade</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <h2 class="display-6 text-center mb-4">Compare os pacotes</h2>
+  
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Econômico</th>
+              <th style="width: 22%;">Executivo</th>
+              <th style="width: 22%;">Primeira Classe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Roteiro Personalizado</th>
+              <td><img src="./check-circle-fill.svg"></td>
+              <td><img src="./check-circle-fill.svg"></td>
+              <td><img src="./check-circle-fill.svg"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Dados por formulários</th>
+              <td><img src="./check-circle-fill.svg"></td>
+              <td><img src="./x-circle.svg"></td>
+              <td><img src="./x-circle.svg"></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Dados por ligação (30min)</th>
+              <td><img src="./x-circle.svg"></td>
+              <td><img src="./check-circle-fill.svg"></td>
+              <td><img src="./check-circle-fill.svg"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Duracao da Viagem</th>
+              <td>1-7 dias</td>
+              <td>1-7 dias</td>
+              <td>1-10 dias</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Revisões</th>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <h2 class="display-6 text-center mb-4">Para onde você vai?</h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./adam-chang-IWenq-4JHqo-unsplash.jpg" class="d-block w-100" alt="praia">
+        </div>
+        <div class="carousel-item">
+          <img src="./camille-minouflet-d7M5Xramf8g-unsplash.jpg" class="d-block w-100" alt="neve">
+        </div>
+        <div class="carousel-item">
+          <img src="./james-ting-VIhBOwitqu8-unsplash.jpg" class="d-block w-100" alt="cidade">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próxima</span>
+      </button>
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="./airplane-fill.svg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

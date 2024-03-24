@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    .flex-gallery {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+   .grid-painting {
+    background-color: #000;
+    height: 748px;
+    width: 748px;
+    display: grid;
+    grid-template-columns: 320px 198px 153px 47px;
+    grid-template-rows: 414px 130px 155px 20px; 
+    gap: 10px; 
+   }
+
+
+    .grid-red {
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .one {
+      grid-column: span 3;
+    }
+      
+    .two {
+      grid-row: span 2;
+      
+    }
+    .three {
+      grid-column: span 2;
+      grid-row: span 2;
+      
+    }
+    .four {
+      border-top: solid 10px;
+        
+    }
+    .grid-white {
+      background-color: #F0F1EC;
+    }
+    .grid-yellow {
+      background-color: #F9D01E;
+    }
+    .grid-black {
+      background-color:#232629;
+    }
+    .grid-blue {
+      background-color: #004592;    
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="flex-gallery">
+    <div class="grid-painting">
+      <div class="grid-red"></div>
+      <div class="grid-white one"></div>
+      <div class="grid-white two"></div>
+      <div class="grid-white three"></div>
+      <div class="grid-blue"></div>
+      <div class="grid-white four"></div>
+      <div class="grid-white five"></div>
+      <div class="grid-yellow"></div>
+      <div class="grid-black>"></div>
+      
+  
+    </div>
+  </div>
+</body>
+
+</html>
