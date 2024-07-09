@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
     fibonacci.push(newNumber);
   }
 
-  fibonacciMessage.textContent = fibonacci.slice(0, userNumber + 1);
+  fibonacciMessage.textContent = fibonacci.slice(0, userNumber);
 
   codeBox.append(fibonacciMessage);
 });
