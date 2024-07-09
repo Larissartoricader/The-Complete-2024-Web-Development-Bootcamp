@@ -6,5 +6,3 @@ function fibonacciGenerator() {
 }
 fibonacciGenerator();
 fibonacciGenerator();
-// fibonacciGenerator();
-// fibonacciGenerator();
