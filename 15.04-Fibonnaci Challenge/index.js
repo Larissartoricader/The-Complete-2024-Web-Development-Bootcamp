@@ -4,10 +4,10 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const userNumber = Number(event.target.elements.number.value);
-  console.log(userNumber);
+
   let fibonacci = [0, 1];
   for (
-    let sequenceLength = fibonacci.length - 1;
+    let sequenceLength = fibonacci.length;
     sequenceLength <= userNumber;
     sequenceLength++
   ) {
