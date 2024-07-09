@@ -17,3 +17,4 @@ function beerGame() {
     bodyElement.append(bottlesNr);
   }
 }
+beerGame();
