@@ -6,3 +6,6 @@ listElement.innerHTML = "Larissa";
 const googleListElement = document.querySelector(".list a");
 console.log(googleListElement);
 googleListElement.style.color = "red";
+
+const buttonColor = document.querySelector("button");
+buttonColor.style.backgroundColor = "yellow";
