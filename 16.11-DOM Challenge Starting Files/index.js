@@ -9,3 +9,7 @@ googleListElement.style.color = "red";
 
 const buttonColor = document.querySelector("button");
 buttonColor.style.backgroundColor = "yellow";
+
+const heading = document.querySelector("h1");
+console.log(heading);
+heading.classList.add("huge");
