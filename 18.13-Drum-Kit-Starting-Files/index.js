@@ -7,7 +7,8 @@
 // const buttonL = document.querySelector(".l");
 const allButtons = document.querySelectorAll("button");
 
+const audio = new Audio("./sounds/tom-1.mp3");
+
 allButtons.forEach((button) => {
-  button.addEventListener("click", () => console.log("Clicked"));
+  button.addEventListener("click", () => audio.play());
 });
-console.log(allButtons);
