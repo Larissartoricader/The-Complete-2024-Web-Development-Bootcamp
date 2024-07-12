@@ -35,17 +35,30 @@ function makeSound(classButton) {
       console.log("Something Wrong " + classButton);
   }
 }
+
+function buttonAnimation(currentKey) {
+  let currentButton = document.querySelector("." + currentKey);
+  currentButton.classList.add("pressed");
+  setTimeout(function () {
+    currentButton.classList.remove("pressed");
+  }, 500);
+}
+
 // SOLUTION with Keypress
 document.addEventListener("keypress", function (event) {
   let classButton = event.key;
   makeSound(classButton);
+  console.log(classButton);
+  buttonAnimation(classButton);
 });
 
-// SOLUTION with SWITCH
+// SOLUTION with Click
 
 allButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    let classButton = button.className;
+    let classButton = button.className.slice(0, 1);
     makeSound(classButton);
+    console.log(classButton);
+    buttonAnimation(classButton);
   });
 });
