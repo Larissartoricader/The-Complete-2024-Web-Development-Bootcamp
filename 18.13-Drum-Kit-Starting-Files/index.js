@@ -41,7 +41,7 @@ function buttonAnimation(currentKey) {
   currentButton.classList.add("pressed");
   setTimeout(function () {
     currentButton.classList.remove("pressed");
-  }, 500);
+  }, 100);
 }
 
 // SOLUTION with Keypress
