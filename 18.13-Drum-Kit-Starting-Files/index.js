@@ -1,5 +1,7 @@
 const allButtons = document.querySelectorAll("button");
 
+// SOLUTION with SWITCH
+
 allButtons.forEach((button) => {
   button.addEventListener("click", () => {
     let classButton = button.className;
@@ -36,6 +38,8 @@ allButtons.forEach((button) => {
       default:
         console.log("Something Wrong " + classButton);
     }
+
+    // SOLUTION WITH IF/ELSE
 
     // let rightAudio;
     // const buttonClass = button.className;
