@@ -1,3 +1,9 @@
-body {
+.new-body {
   background-color: hotpink;
+}
+
+.new-h1 {
+  font-size: 5rem;
+  font-family: cursive;
+  color: violet;
 }
