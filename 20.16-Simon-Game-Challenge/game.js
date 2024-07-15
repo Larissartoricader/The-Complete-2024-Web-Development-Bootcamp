@@ -49,8 +49,9 @@ function randomColor() {
   console.log("The current color is " + currentColor);
   const randomColorSound = new Audio(`./sounds/${currentColor}.mp3`);
   const randomColorButton = $(`#${currentColor}`);
-  randomColorButton.slideUp().slideDown();
+  randomColorButton.fadeOut(10).fadeIn(10);
   randomColorSound.play();
+
   return currentColor;
 }
 
