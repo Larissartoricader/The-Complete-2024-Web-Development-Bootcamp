@@ -11,6 +11,7 @@ const greenButton = $("#green");
 
 blueButton.on("click", function () {
   blueSound.play();
+  blueButton.addClass("pressed");
 });
 
 redButton.on("click", function () {
@@ -25,13 +26,26 @@ greenButton.on("click", function () {
   greenSound.play();
 });
 
-const gameLine = [];
+const gameSequence = [];
+const userSequence = [];
 const colorOptions = ["red", "green", "yellow", "blue"];
 
-function game() {
+function randomColor() {
   randomColorIndex = Math.floor(Math.random() * colorOptions.length);
   currentColor = colorOptions[randomColorIndex];
   console.log("The current color is " + currentColor);
+  const randomColorSound = new Audio(`./sounds/${currentColor}.mp3`);
+  const randomColorButton = $(`#${currentColor}`);
+  randomColorButton.slideUp().slideDown();
+  randomColorSound.play();
+  return currentColor;
 }
 
-game();
+function game() {
+  gameSequence.push(randomColor());
+  console.log("This is the Game Sequence " + [gameSequence]);
+}
+
+$(document).on("keypress", function () {
+  game();
+});
