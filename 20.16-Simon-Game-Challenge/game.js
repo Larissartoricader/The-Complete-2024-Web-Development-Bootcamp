@@ -9,21 +9,34 @@ const redButton = $("#red");
 const yellowButton = $("#yellow");
 const greenButton = $("#green");
 
+function removeClickedClass(buttonName) {
+  setTimeout(function () {
+    buttonName.removeClass("pressed");
+  }, 200);
+}
+
 blueButton.on("click", function () {
   blueSound.play();
   blueButton.addClass("pressed");
+  removeClickedClass(blueButton);
 });
 
 redButton.on("click", function () {
   redSound.play();
+  redButton.addClass("pressed");
+  removeClickedClass(redButton);
 });
 
 yellowButton.on("click", function () {
   yellowSound.play();
+  yellowButton.addClass("pressed");
+  removeClickedClass(yellowButton);
 });
 
 greenButton.on("click", function () {
   greenSound.play();
+  greenButton.addClass("pressed");
+  removeClickedClass(greenButton);
 });
 
 const gameSequence = [];
