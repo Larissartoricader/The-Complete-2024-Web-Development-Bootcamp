@@ -72,6 +72,9 @@ function game() {
   $(".btn").click(function () {
     const clickedColor = $(this).attr("id");
     userSequence.push(clickedColor);
+    // clickedColor.play();
+    // clickedColor.addClass("pressed");
+    // removeClickedClass(clickedColorButton);
   });
 
   if (userSequence.join() === gameSequence.join()) {
