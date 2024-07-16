@@ -2,8 +2,8 @@ import pickRandomColor from "./pickRandomColor.js";
 import { userPickedColor } from "./userColor.js";
 import { isReadyForChecking } from "./isReadyForChecking.js";
 
-const gameSequence = [];
-const userSequence = [];
+export const gameSequence = [];
+export const userSequence = [];
 
 $(document).on("keypress", function () {
   gameSequence.push(pickRandomColor());
