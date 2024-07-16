@@ -1,10 +1,16 @@
 import pickRandomColor from "./pickRandomColor.js";
+import { userPickedColor } from "./userColor.js";
+import { isReadyForChecking } from "./isReadyForChecking.js";
+
+const gameSequence = [];
+const userSequence = [];
 
 $(document).on("keypress", function () {
-  pickRandomColor();
+  gameSequence.push(pickRandomColor());
 });
 
-$(".btn").click(function () {
-  const userClickedColor = $(this).attr("id");
-  console.log("The user Color is " + userClickedColor);
+$(".btn").on("click", function () {
+  const currentButton = $(this);
+  userSequence.push(userPickedColor(currentButton));
+  isReadyForChecking(userSequence, gameSequence);
 });
