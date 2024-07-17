@@ -9,5 +9,7 @@ export function checkingAnswer(par1, par2) {
     console.log("Right! Same Sequence, Game goes on");
   } else {
     console.log("Game over");
+    const wrongSound = new Audio(`./sounds/wrong.mp3`);
+    wrongSound.play();
   }
 }
