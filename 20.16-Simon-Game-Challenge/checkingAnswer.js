@@ -10,13 +10,12 @@ export function checkingAnswer(par1, par2, nrOfLevels) {
     const wrongSound = new Audio(`./sounds/wrong.mp3`);
     wrongSound.play();
     $("body").addClass("game-over");
-    $("h1").text("Game Over!!!");
+    $("h1").text("Game Over, Press key to start over");
     $("body").animate({ opacity: 0.0 }, 500, function () {
       $(this).css("opacity", "");
       $("body").removeClass("game-over");
     });
     setTimeout(() => {
-      $("h1").text("Press A Key to Start");
       $(document).one("keypress", () => {
         window.location.reload();
       });
