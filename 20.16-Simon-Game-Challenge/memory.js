@@ -2,7 +2,7 @@ import pickRandomColor from "./pickRandomColor.js";
 import { userPickedColor } from "./userColor.js";
 import { isReadyForChecking } from "./isReadyForChecking.js";
 
-export const gameSequence = [];
+export let gameSequence = [];
 export let userSequence = [];
 export let level = 0;
 export let clicksNeeded = 0;
@@ -18,7 +18,7 @@ $(".btn").on("click", function () {
     const currentButton = $(this);
     userSequence.push(userPickedColor(currentButton));
 
-    isReadyForChecking(userSequence, gameSequence);
+    isReadyForChecking(userSequence, gameSequence, level);
   }
 });
 
