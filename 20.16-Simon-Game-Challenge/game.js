@@ -88,6 +88,7 @@ function removeClickedClass(buttonName) {
 function resetGame() {
   userSequence = [];
   gameSequence = [];
+  lever = 0;
   // Reiniciar outras variáveis de estado conforme necessário
   startGame(); // Assumindo que startGame() inicia o jogo novamente
 }
