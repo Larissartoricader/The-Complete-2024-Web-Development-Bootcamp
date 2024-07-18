@@ -7,6 +7,6 @@ export default function pickRandomColor() {
   const randomColorSound = new Audio(`./sounds/${randomColor}.mp3`);
   randomColorSound.play();
   const randomColorButton = $(`#${randomColor}`);
-  randomColorButton.fadeOut(20).fadeIn(20);
+  randomColorButton.fadeOut(40).fadeIn(40);
   return randomColor;
 }

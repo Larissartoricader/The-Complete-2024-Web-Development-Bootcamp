@@ -42,8 +42,8 @@ export function playGameSequence() {
           $(`.btn[data-color="${gameSequence[i]}"]`).removeClass("highlight");
           i++;
           playNextColor();
-        }, 1000);
-      }, 1000);
+        }, 5000);
+      }, 5000);
     } else {
     }
   }

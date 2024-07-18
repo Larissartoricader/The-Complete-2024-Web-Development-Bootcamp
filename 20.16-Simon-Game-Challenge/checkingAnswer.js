@@ -4,7 +4,9 @@ export function checkingAnswer(par1, par2, nrOfLevels) {
   if (par1.join() === par2.join()) {
     console.log("Right! Same Sequence, Game goes on");
     par1.length = 0;
-    nextLevel();
+    setTimeout(() => {
+      nextLevel();
+    }, 2000);
   } else {
     console.log("Game over");
     const wrongSound = new Audio(`./sounds/wrong.mp3`);
