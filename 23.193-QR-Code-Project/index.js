@@ -5,3 +5,6 @@
 */
 
 import { input } from "@inquirer/prompts";
+const userWebsite = await input({ message: "Enter the URL" });
+
+console.log("here is " + userWebsite);
