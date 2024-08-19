@@ -1,4 +1,4 @@
-//To see how the final website should work, run "node solution.js".
+//Bordyrparses is now part of express, I can use boryParses or express
 //Make sure you have installed all the dependencies with "npm i".
 //The password is ILoveProgramming
 
