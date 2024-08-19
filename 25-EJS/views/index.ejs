@@ -6,7 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello</h1>
-    <script src="/index.js"></script>
+    <% const date = new Date(); const numberOfWeek = date.getDay(); const
+    weekend = "It's the weekend"; const weekday = "It's a weekday. Work Hard!";
+    function dayOfWeek() { if (numberOfWeek === 0 || numberOfWeek === 6) {
+    return weekend; } else { return weekday; } } %>
+    <h1><%= dayOfWeek() %></h1>
   </body>
 </html>
