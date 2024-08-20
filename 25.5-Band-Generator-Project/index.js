@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
+app.use(express.static("public"));
+
 //Step 3 - Make the styling show up.
 //Hint 1: CSS files are static files!
 //Hint 2: The header and footer are partials.
@@ -16,9 +18,26 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs");
 });
 
+function randomName() {
+  const numberOfAdj = adj.length;
+  const numberOfNoun = noun.length;
+  console.log(numberOfAdj);
+  const nameOne = adj[Math.round(Math.random() * numberOfAdj + 1)];
+  console.log(nameOne);
+  const nameTwo = noun[Math.round(Math.random() * numberOfNoun + 1)];
+  console.log(nameTwo);
+  const newNameOfABand = `${nameOne} ${nameTwo}`;
+  console.log(newNameOfABand);
+  return newNameOfABand;
+}
+
 app.post("/submit", (req, res) => {
+  randomName();
+  res.render("index.ejs");
+
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
   //Then:
