@@ -16,18 +16,25 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+function year() {
+  const year = new Date();
+
+  return year.getFullYear();
+}
+
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
-  res.render("index.ejs");
+  const currentYear = year();
+  res.render("index.ejs", { year: currentYear });
 });
 
 function randomName() {
   const numberOfAdj = adj.length;
   const numberOfNoun = noun.length;
   console.log(numberOfAdj);
-  const nameOne = adj[Math.round(Math.random() * numberOfAdj + 1)];
+  const nameOne = adj[Math.round(Math.random() * numberOfAdj)];
   console.log(nameOne);
-  const nameTwo = noun[Math.round(Math.random() * numberOfNoun + 1)];
+  const nameTwo = noun[Math.round(Math.random() * numberOfNoun)];
   console.log(nameTwo);
   const newNameOfABand = `${nameOne} ${nameTwo}`;
   console.log(newNameOfABand);
@@ -35,8 +42,9 @@ function randomName() {
 }
 
 app.post("/submit", (req, res) => {
-  randomName();
-  res.render("index.ejs");
+  const name = randomName();
+  const currentYear = year();
+  res.render("index.ejs", { nameOftheBand: name, year: currentYear });
 
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
